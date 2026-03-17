@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vellfire Elite - The Art of Presence</title>
+    <meta name="description" content="Experience the Vellfire Elite — an executive lounge on wheels. Sculpted dominance meets uncompromising luxury.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div id="cursor-glow"></div>
+
+    <div id="scroll-progress"></div>
+    <img src="car-top-view.png" id="scroll-car" alt="Scroll Car">
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-brand">VELLFIRE <span class="nav-accent">ELITE</span></div>
+        <div class="nav-links">
+            <a href="#design" class="nav-link">Design</a>
+            <a href="#entry" class="nav-link">Cabin</a>
+            <a href="#specs" class="nav-link">Specs</a>
+        </div>
+        <button class="nav-cta">Book Now</button>
+    </nav>
+
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Igniting... 0%</div>
+        </div>
+    </div>
+
+    <canvas id="hero-lightpass"></canvas>
+
+    <div class="scroll-content">
+        <div class="step step-0 active" data-step="0">
+            <span class="eyebrow">Introducing</span>
+            <h1 class="gradient-text">Vellfire Elite.</h1>
+            <p>The Art of Presence.</p>
+            <div class="scroll-indicator">
+                <span class="indicator-text">Scroll to Ignite</span>
+                <div class="indicator-line"></div>
+            </div>
+        </div>
+
+        <div class="step step-1" data-step="25">
+            <span class="eyebrow">01 &mdash; Exterior</span>
+            <h2 class="gradient-text">Sculpted Dominance.</h2>
+            <p>Bold lines meet brutalist design.</p>
+        </div>
+
+        <div class="step step-2" data-step="60">
+            <span class="eyebrow">02 &mdash; Lighting</span>
+            <h2 class="gradient-text">Illuminate the Dark.</h2>
+            <p>Signature LED ignition.</p>
+        </div>
+
+        <div class="step step-3" data-step="90">
+            <span class="eyebrow">03 &mdash; Experience</span>
+            <h2 class="gradient-text">Command the Road.</h2>
+            <button class="cta-button">
+                <span class="btn-text">Book an Executive Session</span>
+                <span class="btn-glow"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="scroll-space"></div>
+
+    <div class="hero-fade-out"></div>
+
+    <main class="content-section">
+
+      <section class="vision-section reveal">
+    <div class="vision-content">
+        <span class="eyebrow">The Philosophy</span>
+        <h2 class="vision-text">More than a vehicle. <br> A mobile sanctuary engineered for those who shape the world.</h2>
+    </div>
+</section>
+
+<section class="highway-breakout">
+    <div class="parallax-container">
+        <img src="vellfire-in-highway.png" alt="Vellfire on the Open Road" class="parallax-highway">
+        <div class="highway-overlay">
+            <span class="eyebrow">00 &mdash; Performance</span>
+            <h3>Engineered for the Infinite.</h3>
+        </div>
+    </div>
+</section>
+
+
+
+        <section class="editorial-block reveal" id="design">
+            <div class="editorial-text reveal-child" style="--delay: 0s">
+                <span class="eyebrow">01 &mdash; Form Factor</span>
+                <h3 class="gradient-text">Brutalist Elegance.</h3>
+                <p>Recognized globally for its bold aesthetic and unparalleled road presence. The Vellfire Elite doesn't just arrive; it makes a statement of absolute authority. Every sculpted line serves a purpose, cutting through the air with silent precision.</p>
+            </div>
+            <div class="editorial-image parallax-img reveal-child offset-down" style="--delay: 0.2s">
+                <img src="design-vell.png" alt="Vellfire Exterior Design">
+            </div>
+        </section>
+
+        <section class="cinematic-video-section reveal" id="illumination">
+            <div class="video-container">
+                <video id="indicators-video" src="indicatorsblinking.mp4" autoplay loop muted playsinline></video>
+                <div class="video-overlay centered">
+                    <span class="eyebrow">02 &mdash; Illumination</span>
+                    <h3>Signature Optics</h3>
+                    <p>Dynamic sequential lighting that commands attention.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="side-scroll-container" id="entry">
+            <div class="side-sticky">
+                <div class="side-canvas-wrapper reveal">
+                    <canvas id="side-view-canvas"></canvas>
+                    <div class="side-text-overlay">
+                        <div class="side-text-content">
+                            <span class="eyebrow side-eyebrow">03 &mdash; The Invitation</span>
+                            <h3 class="side-title gradient-text">Step Into Sanctuary.</h3>
+                            <p class="side-desc">A seamless transition from absolute power to opulent comfort. Enter your private lounge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="editorial-block reverse reveal" id="interior">
+            <div class="editorial-text reveal-child" style="--delay: 0s">
+                <span class="eyebrow">04 &mdash; The Cabin</span>
+                <h3 class="gradient-text">Uncompromising Luxury.</h3>
+                <p>Now that you've arrived, experience an interior crafted for the most discerning executives. Hand-stitched quilted leather, zero-gravity Ottoman seating, and ambient environments tailored to your exact mood.</p>
+            </div>
+            <div class="editorial-image parallax-img reveal-child offset-up" style="--delay: 0.2s">
+                <img src="wf1.png" alt="Vellfire Interior Luxury">
+            </div>
+        </section>
+
+        <section class="specs-monolith reveal" id="specs">
+            <div class="specs-header reveal-child">
+                <span class="eyebrow">05 &mdash; Architecture</span>
+                <h3 class="gradient-text">Engineered Dominance.</h3>
+            </div>
+            <div class="specs-grid">
+                <div class="spec-item reveal-child" style="--delay: 0.1s">
+                    <span class="spec-number" data-target="197">0</span>
+                    <span class="spec-unit">HP</span>
+                    <span class="spec-label">Peak Hybrid Power</span>
+                </div>
+                <div class="spec-item reveal-child" style="--delay: 0.2s">
+                    <span class="spec-number" data-target="7">0</span>
+                    <span class="spec-unit">Seats</span>
+                    <span class="spec-label">Executive Class</span>
+                </div>
+                <div class="spec-item reveal-child" style="--delay: 0.3s">
+                    <span class="spec-number" data-target="8" data-suffix=".4s">0</span>
+                    <span class="spec-unit"></span>
+                    <span class="spec-label">0-100 km/h</span>
+                </div>
+                <div class="spec-item reveal-child" style="--delay: 0.4s">
+                    <span class="spec-number" data-target="2500">0</span>
+                    <span class="spec-unit">cc</span>
+                    <span class="spec-label">Displacement</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section reveal">
+            <blockquote id="quote-text">"The details are not the details. They make the design."</blockquote>
+            <cite id="quote-author">— Charles Eames</cite>
+        </section>
+
+        <footer class="hero-footer">
+            <div class="footer-brand">VELLFIRE <span class="nav-accent">ELITE</span></div>
+            <div class="footer-links">
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Sushanth Hebri</a>
+                <a href="#">Contact</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Vellfire Elite - fan creation. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <audio id="hero-audio" src="car-moving.mp3" preload="auto"></audio>
+    <audio id="side-audio" src="vellfire-slide.mp3" preload="auto"></audio>
+
+    <div id="audio-tooltip" class="audio-tooltip">
+        Experience the sound
+    </div>
+    <button id="audio-toggle" class="audio-toggle-btn" aria-label="Toggle ambient audio">
+        <div class="audio-wave">
+            <span class="wave"></span>
+            <span class="wave"></span>
+            <span class="wave"></span>
+            <span class="wave"></span>
+            <span class="wave"></span>
+        </div>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
